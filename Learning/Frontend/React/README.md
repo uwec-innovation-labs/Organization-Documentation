@@ -1,4 +1,4 @@
-# Guide
+# The React Learning Guide
 
 This guide is only a recommendation of how to learn React. There are many ways to learn it. React is library created by Facebook which allows us to build components for the frontend. Its much more scalable and easier to maintain.
 
