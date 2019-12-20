@@ -1,22 +1,24 @@
 # React Project Structure
 
-With React, we want to focus on modularity and reusability. We will be taking a page from Chemistry by following something called Atomic Design Methodology.
+With React, we want to focus on modularity and reusability.
 
-Resources for this can be found here: http://atomicdesign.bradfrost.com/chapter-2/
+A very interesting way to organize your projects is with Atomic Design, which can be found here: http://atomicdesign.bradfrost.com/chapter-2/
+
+We are using a simple version of this by seperating our pages and their components up. We don't want to go too crazy with this and we think this is a simple way of organizing the frontend. We will probably change this over time.
 
 ## Basic Understanding
 
-Here is a breakdown of how React components will be organized. This may change as we find better ways of organizing.
+Here is a breakdown of how React components will be organized. We are
 
 ```
 - frontend
     - public
     - components
-        - 1-atoms
-        - 2-molecules
-        - 3-organisms
-        - 4-templates
-        - 5-pages
+        - pages
+            - ExamplePage
+                - components
+                - ExamplePage.js
+        - reusableComponents
     - scripts
     app.js
     app.css
@@ -28,11 +30,6 @@ The frontend will consist of other files and folders as part of React, but we wa
 
 ## Important Notes and Tips
 
-- Within **Atoms**, do not set any margins and positions
-- Only **Organisms** and **Molecules** can set margins and positions
-- **Templates** have only one purpose, to set the grid of pages, but never the positions of specific elements
-- Pages only purpose is to give the information to the **Templates**
-- For Atoms, try to keep things organized, dynamic, and modular
-- Take the time to evaluate and refactor components to fit into this methodology. Its important to evaluate and question the engineering choices made to ensure the most optimal solution
-- There might not be a perfect place for a new component. Try to find a place that makes the most sense.
-- When using frameworks like Bootstrap or Material-UI, decide if you want to break it down to atoms, or not. If you are not sure, its always safe have them as atoms. If you want something done faster, than opt to not do that and just integrate those components as if they are already atoms
+- While this may sound like a strict structure for projects, its not. Feel free to split things up in a friendlier way if you have good reason to do so.
+- Its important for the Page.js file to just be a template of components found within that pages components folder or using the components in the resuableComponents folder
+- Again, this is one way to organize it, so if you think you can use a better structure, do so.
