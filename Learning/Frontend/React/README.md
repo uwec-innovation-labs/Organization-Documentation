@@ -62,3 +62,17 @@ When a package is installed its dependencies and itself are put in the node_modu
 ## Step 4: TypeScript and Continued Learning
 
 The final recommended thing to look into is TypeScript. TypeScript basically makes JavaScript strongly typed and more Object-Oriented. Its tricky, but worth learning eventually. Other than that, there are so many more things to learn and to continue to learn as new things come out. Be curious and try out new things from time to time.
+
+# Standards
+There is some simple things you can do in order to make a project more managable and easier to understand. With that, we have a few things to keep in mind when starting up a React project.
+
+## Setting up a React Project
+In order to initialize the boilerplate code for React, run the command 'npx create-react-app somefoldername'. Here are some additional things to setup for most projects.
+- Create a componenets folder within the src folder. This is where you will organize the React components you build.
+- Remove the serviceWorker.js found in the src folder.
+- In the index.js in the src folder, remove the serviceworker line found on line 12 usually and the comments associated with it
+- Remove the line 'import * as serviceWorker from './serviceWorker';' in the index.js file as well.
+- Remove the logo.svg found in the src folder
+- Remove 'import logo from './logo.svg';' and everything between the <div> </div> tags. This will cleanup the base code
+- Remove the README.md file in the root. We can re-add this later if we need it.
+- I would also change the title of the app found in the public folder in the index.html file.
