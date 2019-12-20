@@ -51,10 +51,6 @@ When a package is installed its dependencies and itself are put in the node_modu
 
 - Socket.io: https://www.npmjs.com/package/socket.io
 
-### Global State
-
-- Redux: https://www.npmjs.com/package/react-redux
-
 ### Desktop Builds
 
 - Electron: https://www.npmjs.com/package/electron
